@@ -19,8 +19,12 @@
 				position: absolute;
 				left: 50%;
 				bottom: 175px;
-				animation: elongate 2s infinite ease-in-out alternate;
+				color:white;
+				transform:translateX(-50%);
 				display: none;
+			}
+			model-viewer > #ar-prompt span {
+				margin-top:70px;
 			}
 
 			model-viewer[ar-status="session-started"] > #ar-prompt {
@@ -36,7 +40,7 @@
 		<model-viewer src="astronaut.glb" camera-controls ar ar-scale="auto" ar-modes="webxr scene-viewer quick-look" shadow-intensity="1" ios-src="astronaut.usdz" style="width:100%; height:100%;">
 			<div id="ar-prompt">
 				<img src="hand.png"><br/>
-				Scan the floor around you.
+				<span>Scan the floor around you.</span>
 			  </div>
 		</model-viewer>
 	</body>
